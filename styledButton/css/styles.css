@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100;
+}
+
+main {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 2px 3px 8px #BBB;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: 1px solid transparent;
+  background-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 80px;
+  height: 34px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+.btn-default {
+  background-color: white;
+  border-color: rgb(204, 204, 204);
+}
+
+.btn-default:hover {
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(173, 173, 173);
+}
+
+.btn-primary {
+  background-color: rgb(51, 112, 183);
+  border-color: rgb(46, 109, 164);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(40, 96, 144);
+  border-color: rgb(32, 77, 116);
+}
+
+.btn-danger {
+  background-color: rgb(217, 83, 79);
+  border-color: rgb(212, 63, 58);
+  color: white;
+}
+.btn-danger:hover {
+  background-color: rgb(201, 48, 44);
+  border-color: rgb(172, 41, 37);
+}
+
+.btn-success {
+  background-color: rgb(92, 184, 92);
+  border-color: rgb(76, 174, 76);
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: rgb(68, 157, 68);
+  border-color: rgb(57, 132, 57);
+}
