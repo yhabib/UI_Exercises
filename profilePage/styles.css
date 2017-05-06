@@ -130,7 +130,6 @@ header a {
 #bio .titles h3, #bio .title h3{
   padding-bottom: .8rem;
   display: inline-block;
-  /*border-bottom: 1px solid #CCCDDD;*/
   padding-left: 0px;
   padding-right: 0px;
 
@@ -203,14 +202,30 @@ header a {
 #portfolio {
   padding-top: 2rem;
 }
-.fullApp {
-  text-decoration: none;
-  font-weight: bold;
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-.fullApp:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 1);
+
+.project {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black; 
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project-picture {
+  height: 50%;
+  width: 100%;
+  border: 1px solid black; 
+}
+
+.project-description {
+  height: 50%;
+  width: 100%;
+  border: 1px solid black; 
 }
 
 
