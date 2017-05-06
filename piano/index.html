@@ -2,33 +2,87 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Piano</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="piano">
-      <div class="piano-keyboard">
-        <div data-key="C" class="piano-key">C</div>
-        <div data-key="c" class="piano-key_minor">C</div>
-        <div data-key="D" class="piano-key">D</div>
-        <div data-key="d" class="piano-key_minor">D</div>
-        <div data-key="E" class="piano-key">E</div>
-        <div data-key="F" class="piano-key">F</div>
-        <div data-key="f" class="piano-key_minor">F</div>
-        <div data-key="G" class="piano-key">G</div>
-        <div data-key="g" class="piano-key_minor">G</div>
-        <div data-key="A" class="piano-key">A</div>
-        <div data-key="a" class="piano-key_minor">A</div>
-        <div data-key="B" class="piano-key">B</div>
-        <div data-key="C" class="piano-key">C</div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Piano</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="piano">
+    <div class="piano-keyboard">
+      <div class="piano-keyboard-first">
+        <div data-key="KeyA" class="piano-key"><div>A</div></div>
+        <div data-key="KeyQ" class="piano-key_minor"><div>Q</div></div>
+        <div data-key="KeyS" class="piano-key"><div>S</div></div>
+        <div data-key="KeyW" class="piano-key_minor"><div>W</div></div>
+        <div data-key="KeyD" class="piano-key"><div>D</div></div>
+        <div data-key="KeyF" class="piano-key"><div>F</div></div>
+        <div data-key="KeyE" class="piano-key_minor"><div>E</div></div>
+        <div data-key="KeyJ" class="piano-key"><div>J</div></div>
+        <div data-key="KeyU" class="piano-key_minor"><div>U</div></div>
+        <div data-key="KeyK" class="piano-key"><div>K</div></div>
+        <div data-key="KeyI" class="piano-key_minor"><div>I</div></div>
+        <div data-key="KeyL" class="piano-key"><div>L</div></div>
+        <div data-key="KeyO" class="piano-key"><div>O</div></div>
+      </div>
+      <div class="piano-keyboard-sec">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+        <div class="fifth"></div>
+        <div class="sixth"></div>
+        <div class="seventh"></div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+
+  <audio data-key="KeyA" src="wav/c1.wav"></audio>
+  <audio data-key="KeyQ" src="wav/c1s.wav"></audio>
+  <audio data-key="KeyS" src="wav/d1.wav"></audio>
+  <audio data-key="KeyW" src="wav/d1s.wav"></audio>
+  <audio data-key="KeyD" src="wav/e1.wav"></audio>
+  <audio data-key="KeyF" src="wav/f1.wav"></audio>
+  <audio data-key="KeyE" src="wav/f1s.wav"></audio>
+  <audio data-key="KeyJ" src="wav/g1.wav"></audio>
+  <audio data-key="KeyU" src="wav/g1s.wav"></audio>
+  <audio data-key="KeyK" src="wav/a1.wav"></audio>
+  <audio data-key="KeyI" src="wav/a1s.wav"></audio>
+  <audio data-key="KeyL" src="wav/b1.wav"></audio>
+  <audio data-key="KeyO" src="wav/c2.wav"></audio>
+
+  <script>
+    (function () {
+      function keyPressed(e) {
+        const audio = document.querySelector(`audio[data-key="${e.code}"]`),
+          key = document.querySelector(`div[data-key="${e.code}"]`);
+          
+        if (!audio) return;
+
+        key.classList.add("playing");
+        audio.currentTime = 0;
+        audio.play();
+      };
+      function removeStyle(e) {
+        if (e.type !== "transitionend") return;
+        e.target.classList.remove("playing");
+      }
+
+      document.addEventListener('transitionend', removeStyle);
+      document.addEventListener('keypress', keyPressed);
+    })()
+  </script>
+</body>
+
 </html>
