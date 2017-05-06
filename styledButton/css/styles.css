@@ -40,6 +40,9 @@ button:focus {
   justify-content: center;
   align-items: center;
 }
+.button-expandable {
+  width: 90%;
+}
 
 .btn {
   border: 1px solid transparent;
@@ -58,12 +61,31 @@ button:focus {
   border-radius: 50%;
 }
 
+.btn-triangle-left {
+	width: 0;
+	height: 0;
+	border-right: 50px solid rgb(92, 92, 92);
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+  position: relative;
+  right: -5px;  
+}
+
+.btn-triangle-right {
+	width: 0;
+	height: 0;
+	border-left: 50px solid rgb(92, 92, 92);
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+  position: relative;
+  left: -5px;
+}
+
 .btn-effect {
   background-color: rgb(92, 92, 92);
   color: #ddd;
   transition: all 1.2s ease-out;
 }
-
 
 .btn-default {
   background-color: white;
@@ -126,4 +148,8 @@ button:focus {
 
 .btn-rotate3d:hover {
   transform: rotate3d(1, 1, 1, 360deg);
+}
+
+.btn-expand:hover {
+  width: 800px;
 }
