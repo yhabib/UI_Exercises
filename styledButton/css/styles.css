@@ -87,6 +87,10 @@ button:focus {
   transition: all 1.2s ease-out;
 }
 
+.btn-effect:hover {
+  color: white;
+}
+
 .btn-default {
   background-color: white;
   border-color: rgb(204, 204, 204);
