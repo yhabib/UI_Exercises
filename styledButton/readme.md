@@ -10,6 +10,7 @@ In order to understand how it works, first we need to think about if it always m
 * `font-family` is a property where we define which font do we want to use. By default all elements have it defined to `inherit` meaning that if we define it for the `body`, all its children (the whole page) are going to have this same font. If this property wasn't defined as `inherit` by default we should define for EACH element its font. 
 * `background-color`: In this case the default value is `transparent`, meaning that if we define the background as red, it is not going to affect its children, and that makes sense because this property should be defined per element.
 
+
 ### Cascade
 The cascade is about what take precedence when there is a conflict. The rules of the cascade include:
 
