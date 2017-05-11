@@ -1,8 +1,8 @@
 # UI basic exercises
-A collection of exercises prepared for people startig with the front end development.
+Some exercises to practice HTML, CSS and JS.
 
 ## Concepts
-* CSS cascading
+* CSS cascading and inheritance
 * CSS boxing and disposition
 * CSS transitions and transformations
 * HTML new tags
