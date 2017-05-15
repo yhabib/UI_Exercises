@@ -10,5 +10,5 @@ Some exercises to practice HTML, CSS and JS.
 
 ## Table of contents
 * [Styling buttons](./styledButton) 
-* [My Page](./personalPage)
 * [Piano](./piano)
+* [My Portfolio Page](./personalPage)
