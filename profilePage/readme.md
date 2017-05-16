@@ -14,7 +14,8 @@ If you are already feeling the *designer* inside you, be as cretive as possibly,
 It is recommend to implemented making use of bootstrap, a CSS framework that will help you to be more professional.
 
 ## Keywords
-* [Bootstrap](https://getbootstrap.com/getting-started/): [Tutorial][https://www.w3schools.com/bootstrap/]
+* [Bootstrap](https://getbootstrap.com/getting-started/)
+* [Bootstrap tutorial](https://www.w3schools.com/bootstrap/)
 * Some links to search for images without copyright:
   * [Pixabay](https://pixabay.com/)
   * [Freerange](https://freerangestock.com/index.php)
