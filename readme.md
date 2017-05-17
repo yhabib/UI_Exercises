@@ -12,3 +12,8 @@ Some exercises to practice HTML, CSS and JS.
 * [Styling buttons](./styledButton) 
 * [Piano](./piano)
 * [My Portfolio Page](./personalPage)
+
+## Instructions
+1. Fork the repo
+2. Create a new branch with your github name
+3. Start to code your solutions :D
