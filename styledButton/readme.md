@@ -1,7 +1,9 @@
 # Buttons Exercise - Cascade and inheritance
 
+[Working example](https://yhabib.github.io/UI_Exercises/styledButton/index.html)
+
 ## Concepts
-For this exercise we are going to make use of two of the most important characteristics of CSS
+For this exercise we are going to make use of two of the most important characteristics of CSS: inheritance and cascade.
 
 ### Inheritance
 So as we have seen with JS and Java Inheritance is about how properties and methods trickle down from an element to its children. In the case of CSS, we only care about properties.
